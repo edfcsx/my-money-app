@@ -1,0 +1,9 @@
+.main-footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+}
+
+.content-wrapper{
+    height: 100vh;
+}
