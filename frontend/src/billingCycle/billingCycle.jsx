@@ -7,11 +7,11 @@ import Content from '../commons/template/content'
 import Tabs from '../commons/tab/tabs'
 import TabsHeader from '../commons/tab/tabsHeader'
 import TabsContent from '../commons/tab/tabsContent'
-import tabsContent from '../commons/tab/tabsContent'
 import TabHeader from '../commons/tab/tabHeader'
 import TabContent from '../commons/tab/tabContent'
 
 import { selectTab, showTabs } from '../commons/tab/tabActions'
+import List from './billingCycleList'
 
 class BillingCycle extends Component{
 
@@ -32,12 +32,14 @@ class BillingCycle extends Component{
                             <TabHeader label='Alterar' icon='pencil' target='tabUpdate' />
                             <TabHeader label='Excluir' icon='trash' target='tabDelete'/>
                         </TabsHeader>
-                        <tabsContent>
-                            <TabContent id='tabList'><h1>Lista</h1></TabContent>
+                        <TabsContent>
+                            <TabContent id='tabList'>
+                                <List/>
+                            </TabContent>
                             <TabContent id='tabCreate'><h1>Create</h1></TabContent>
                             <TabContent id='tabUpdate'><h1>Update</h1></TabContent>
                             <TabContent id='tabDelete'><h1>Delete</h1></TabContent>
-                        </tabsContent>
+                        </TabsContent>
                     </Tabs>
                 </Content>
             </div>

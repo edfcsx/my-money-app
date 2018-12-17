@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { bindActionCreatores } from 'redux'
 import { connect } from 'react-redux'
-import './tab.css'
 import If from '../operador/if'
 
 class TabContent extends Component{
@@ -12,7 +11,7 @@ class TabContent extends Component{
 
         return (
             <If test={visible}>
-                <div id={this.props.id} className={`tab-pane ${selected ? 'active' : ''} ${selected ? 'tabContentShow' : 'tabContentHidden'}`}>
+                <div id={this.props.id} className={`tab-pane ${selected ? 'active' : ''}`}>
                     {this.props.children}
                 </div>
             </If>
